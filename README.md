@@ -24,10 +24,10 @@ Standalone Windows Server 2019 instance within a VNET, with a public IP address 
 
 * Populate client_id and client_secret inside global_main.tf from the Service Principal you created in the prerequisites
 * Populate subscription_id and tenant_id inside global_main.tf from your Azure tenant information
-* Populate resource_location inside global_variables.tf with your desired location to provision the resources. Eg UK South
-* Populate resource_prefix inside global_variables.tf with your desired prefix for the provisioned resources. Eg CC-D-UKS
-* Populate remote_location inside global_variables.tf with your public IP address. This will allow whitelisted access to the provisioned instance and storage account
-* Populate admin_username and admin_password inside global_variables.tf with appropriate values which will then be used to log into the instance
+* Populate resource_location inside global_vars.tf with your desired location to provision the resources. Eg UK South
+* Populate resource_prefix inside global_vars.tf with your desired prefix for the provisioned resources. Eg CC-D-UKS
+* Populate remote_location inside global_vars.tf with your public IP address. This will allow whitelisted access to the provisioned instance and storage account
+* Populate admin_username and admin_password inside global_vars.tf with appropriate values which will then be used to log into the instance
 
 The [terraform init](https://www.terraform.io/docs/commands/init.html)  command is used to initialize a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control. It is safe to run this command multiple times
 
