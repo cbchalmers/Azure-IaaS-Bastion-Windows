@@ -1,24 +1,29 @@
 variable "resource_location" {
-  type    = string
-  default = "UK South"
+  description = "Desired location to provision the resources. Eg UK South"
+  type        = string
+#  default    = "UK South"
 }
 
 variable "resource_prefix" {
-  type    = string
-  default = "CC-P-UKS"
+  description = "Desired prefix for the provisioned resources. Eg CC-D-UKS"
+  type        = string
+#  default    = "CC-D-UKS"
 }
 
 variable "remote_location" {
-  type    = string
-  default = ""
+  description = "Your public IP address. This will allow whitelisted access to the provisioned instance and storage account"
+  type        = string
+#  default    = "1.1.1.1/32"
 }
 
 variable "admin_username" {
-  type    = string
-  default = ""
+  description = "Appropriate value which will be used to log into the instance"
+  type        = string
+#  default    = "changeme"
 }
 
 variable "admin_password" {
-  type    = string
-  default = ""
+  description = "Appropriate value which will be used to log into the instance"
+  type        = string
+#  default    = "changeme"
 }
