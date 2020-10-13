@@ -1,5 +1,4 @@
 provider "azurerm" {
-  version         = "2.12.0"
   subscription_id = ""
   client_id       = ""
   client_secret   = ""
